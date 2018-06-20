@@ -1,0 +1,122 @@
+/*	[ Basic HTML ]                                                  */<!-- -->
+body{
+	background:#000000 url(CookBook/bg_repeat.jpg) repeat-y center top;
+}
+
+/*	[ Layout ]                                                      */<!-- -->
+#bg_top{
+	background:url(CookBook/bg_top.jpg) no-repeat center top;
+}
+#bg_btm{
+	background:url(CookBook/bg_btm.png) no-repeat center bottom;
+}
+
+#base{
+	background:url(CookBook/bg_base_repeat.jpg) repeat-y top center;
+}
+
+#header{
+	background:url(CookBook/bg_header.jpg) no-repeat center top;	
+}
+#container{
+	background:url(CookBook/bg_container_top.jpg) no-repeat center top;
+}
+
+#content{
+	background: url(CookBook/bg_ring.jpg) repeat-y right top;
+}
+
+#footer{
+	color:#C6B697;
+	background: transparent url(CookBook/bg_footer.jpg) no-repeat center bottom;
+}
+
+/*	[ Header ] Blog Title, Description, Home URL                    */<!-- -->
+#blog_name a, #blog_name a:hover {
+	color:#C6B697; 
+}
+#blog_desc {
+	color:#C6B697;
+}
+
+/*	[ Header ] Search*/<!-- -->
+.mainsearch {
+	position:absolute;
+	top:260px;
+	left:660px;
+	width:200px;
+	height:40px;
+	background:url('CookBook/bg_search.png') no-repeat 6px 0px;	
+}
+
+.mainsearch_hover{
+	background:none;
+	
+}
+.mainsearch .keyword {
+	position:absolute;
+	visibility:hidden;
+	top:0px;
+	left:5px;
+	height:24px;
+	width:150px;
+	padding:3px 0 1px 0;
+	margin:0 0 0 0;
+	font-size:24px;
+	font-family: Arial, Verdana, Helvetica;
+	color:#55412D; 
+	border:none;
+	background:transparent;
+	border:0px red solid;
+}
+.mainsearch .submit {
+	position:absolute;
+	cursor:pointer;
+	border:none;
+	top:0px;
+	left:160px;
+	height:40px;
+	width:40px;
+	background:transparent;
+	border:0px red solid;
+}
+
+
+/*	[ Menu ] */<!-- -->
+/*	[ Menu ]  Level 1                                               */<!-- -->
+	/* if possible, give menu dynamic width*/
+div.menu li a { /*145x70*/
+	background:url(CookBook/bg_menu1.png) no-repeat top center;
+}
+
+div.menu > ul > li a:hover, 
+div.menu > ul > li.current_page_item > a,
+div.menu > ul > li.current_page_ancestor > a,
+div.menu > ul > li.current_page_parent > a,
+div.menu > ul > li.current-menu-ancestor > a,
+div.menu > ul > li.current-menu-item > a,
+div.menu > ul > li.current-menu-parent > a{
+	background:url(CookBook/bg_menu2.png) no-repeat center top;
+}
+
+/*	[ Footer ] RSS, Link and credit                                      */<!-- -->
+#footer a.rss{
+	position:absolute;
+	display:block;
+	right: 140px;
+	bottom: 20px;
+	height:58px;
+	width:58px;
+}
+#footer_credit{
+	position:relative;
+	margin:0 260px 0 305px;
+	font-size:11px;
+	line-height:1.3em;
+}
+#footer_credit a, #footer_credit a:hover{
+	color:#C6B697;
+	text-decoration:underline;
+}
+
+<!-- -->
